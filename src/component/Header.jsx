@@ -1,5 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
+import { assets } from "../assets/assets";
+
 // import { motion } from "framer-motion";
 
 const Header = () => {
@@ -10,7 +12,7 @@ const Header = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       className="min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden"
-      style={{ backgroundImage: "url('/header_img.png')" }}
+      style={{ backgroundImage: `url(${assets.header_img})` }}
       id="Header"
     >
       <Navbar />
