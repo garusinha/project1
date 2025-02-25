@@ -2,11 +2,11 @@ import React from "react";
 import Navbar from "./Navbar";
 import { assets } from "../assets/assets";
 
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <div
+    <motion.div
       initial={{ opacity: 0, y: 100 }}
       transition={{ duration: 1.5 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ const Header = () => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

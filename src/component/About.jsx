@@ -1,10 +1,10 @@
 import React from "react";
 import { assets } from "../assets/assets";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 function About() {
   return (
-    <div
+    <motion.div
       initial={{ opacity: 0, x: 200 }}
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1, x: 0 }}
@@ -57,7 +57,7 @@ function About() {
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
